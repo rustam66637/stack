@@ -9,7 +9,9 @@ class Stack:
         if self.size() == 0:
             return None # если стек пустой
         else:
+            q = self.stack[self.size() - 1]
             del self.stack[self.size() - 1]
+            return q
 
     def push(self, value):
         self.stack.append(value)
